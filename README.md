@@ -16,3 +16,6 @@ WHEN I read through each section of the tutorial
 THEN I find a detailed explanation of what a specific component of the regex does
 WHEN I reach the end of the tutorial
 THEN I find a section about the author and a link to the author’s GitHub profile
+
+### Starter Code
+[Click Here for Starter Code](https://github.com/coding-boot-camp/bug-free-goggles)
