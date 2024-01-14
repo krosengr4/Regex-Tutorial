@@ -1,8 +1,6 @@
 # Title (replace with your title)
 
-Introductory paragraph (replace this with your text)
-
-
+Regular expressions, known as Regex, is code that contains a series of special characters used to define a search pattern. At first regex may seem confusing and complicated, but when broken down into simple sections, regex becomes much more easy to understand. That is what I will be doing in this tutorial with a line of regex used to match an email.
 
 ## Summary
 
