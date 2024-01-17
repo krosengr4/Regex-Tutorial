@@ -32,8 +32,8 @@ This is a regular expression that is used to match an email address.
 ### Anchors
 Anchors are characters within the regular expressions that allow the user to match strings begin or end with certain characters.
 
-- '^' matches any string that start with the anterior word.
-- '$' matches a string that ends with the word infront of the character.
+- `^` matches any string that start with the anterior word.
+- `$` matches a string that ends with the word infront of the character.
 For example:
 - Hello --- Would match any string with the exact text 'Hello' in it. 
 - ^Hello --- Would match any string starting with the word 'Hello'.
@@ -43,6 +43,12 @@ For example:
 
 
 ### Quantifiers
+
+Quantifiers are characters within the regular expression that specify how many instances a charcter, group, or character class must be represented in the input to be matched.
+
+- `*` matches a string that has the anterior followed by zero or more of the last character. 
+- `+` matches a string that has the anterior followed by one or more of the last character. 
+- `()*` matches a string that has any anterior characters followed by zero or more copies of the string within the brackets.
 
 ### OR Operator
 
@@ -64,4 +70,6 @@ For example:
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+- Kevin Rosengren is a junior developer in his bootcamp class hosted by the University of Texas at Austin.
+
+Github profile: https://github.com/krosengr4
