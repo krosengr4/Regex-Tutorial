@@ -30,6 +30,17 @@ This is a regular expression that is used to match an email address.
 ## Regex Components
 
 ### Anchors
+Anchors are characters within the regular expressions that allow the user to match strings begin or end with certain characters.
+
+- '^' matches any string that start with the anterior word.
+- '$' matches a string that ends with the word infront of the character.
+For example:
+- Hello --- Would match any string with the exact text 'Hello' in it. 
+- ^Hello --- Would match any string starting with the word 'Hello'.
+- world$ --- Would match any string ending in 'goodbye'.
+- ^Hello world$ --- Matches exactly 'Hello world'
+
+
 
 ### Quantifiers
 
