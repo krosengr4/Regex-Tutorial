@@ -1,10 +1,17 @@
 # Title (replace with your title)
 
-Regular expressions, known as Regex, is code that contains a series of special characters used to define a search pattern. At first regex may seem confusing and complicated, but when broken down into simple sections, regex becomes much more easy to understand. That is what I will be doing in this tutorial with a line of regex used to match an email.
+Regular expressions, known as Regex, is code that contains a series of special characters used to define a search pattern. At first regex may seem confusing and complicated, but when broken down into simple sections, regex becomes much more easy to understand. That is what I will be doing in this tutorial.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+The line of that I will use to break into smaller sections is below. 
+
+```
+/[\w._%+-]+@[\w.-]+\.[a-zA-z]{2,4}/
+```
+This is a regular expression that is used to match an email address.
+
+
 
 ## Table of Contents
 
