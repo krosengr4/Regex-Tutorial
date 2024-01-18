@@ -64,7 +64,22 @@ Examples:
 
 ### Character Classes
 
+A character class in a regex defines a set of characters, any one of which can occur in an input string to fulfill a match. They often begin with a `\` followed by a character. Character Classes tell the regex engine to match only one specific characters out of many.
+
+Examples:
+* `\d` - matches a single character that is a digit
+* `\w` - matches a word character (any alphanumeric character plus underscore)
+* `.` - matches any character
+
+
 ### Flags
+
+Flags are used to make changes to the default behavior on how a Regex searches a string. They are placed at the end of a regular expression and they define additional functionality or limits for how the regex searches.
+
+examples: 
+* `g` - Global search. the regex should be tested for all possible matches of a string
+* `i` - Case *Insensitive* search. the case (upper/lower) should be ignored while attempting to match
+* `m` - Multi line search. Will match the start and end of a line, and multiple lines, rather than just a string.
 
 ### Grouping and Capturing
 
