@@ -100,6 +100,9 @@ However, when only dealing with greedy quantifiers, a `+` and/or `{}` can be use
 
 ### Boundaries
 
+Boundaries can be used to capture specific instances or changes withing a designated string. They make assertions about what can be matched to the left and right of the current position.
+Word boundaries are useful when you want to match a sequence of letters, or numbers, on their own.
+
 ### Back-references
 
 ### Look-ahead and Look-behind
