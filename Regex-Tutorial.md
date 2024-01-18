@@ -1,4 +1,4 @@
-# Title (replace with your title)
+# Regex (Regular Expression) Tutorial
 
 Regular expressions, known as Regex, is code that contains a series of special characters used to define a search pattern. At first regex may seem confusing and complicated, but when broken down into simple sections, regex becomes much more easy to understand. That is what I will be doing in this tutorial.
 
@@ -27,9 +27,13 @@ This is a regular expression that is used to match an email address.
 - [Back-references](#back-references)
 - [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
+<hr>
+
 ## Regex Components
 
-### Anchors
+<br>
+
+## Anchors
 Anchors are characters within the regular expressions that allow the user to match strings begin or end with certain characters. The characters `^` and `$` are considered to be anchors.
 
 - `^` matches any string that start with the anterior word.
@@ -43,8 +47,9 @@ For example:
 - goodbye$ --- Would match any string ending in 'goodbye'.
 - ^Hello goodbye$ --- Matches exactly 'Hello goodbye'
 
+<br>
 
-### Quantifiers
+## Quantifiers
 
 Quantifiers set the limits of the string that the regex matches. Special characters within the regular expression set the minimum and maximum number of characters of the string that the regex matches.
 
@@ -52,7 +57,9 @@ Quantifiers set the limits of the string that the regex matches. Special charact
 - `+` matches a string that has the anterior followed by one or more of the last character. 
 - `()*` matches a string that has any anterior characters followed by zero or more copies of the string within the brackets.
 
-### OR Operator
+<br>
+
+## OR Operator
 
 An OR operator, often marked with a `(|)` or `[]`, matches on a choice of regular expressions. If you put the character(s) representing the OR operator between any two characters in the regular expression, the regex will match the union of the strings that those two characters match. 
 
@@ -62,7 +69,9 @@ Examples:
 * `(|)` - mathces a string that has any anterior characters followed by the characters on the left or right of the vertical bar.
 * `[]` - matches a string that has any anterior characters without any characters within the brackets.
 
-### Character Classes
+<br>
+
+## Character Classes
 
 A character class in a regex defines a set of characters, any one of which can occur in an input string to fulfill a match. They often begin with a `\` followed by a character. Character Classes tell the regex engine to match only one specific characters out of many.
 
@@ -71,8 +80,9 @@ Examples:
 * `\w` - matches a word character (any alphanumeric character plus underscore)
 * `.` - matches any character
 
+<br>
 
-### Flags
+## Flags
 
 Flags are used to make changes to the default behavior on how a Regex searches a string. They are placed at the end of a regular expression and they define additional functionality or limits for how the regex searches.
 
@@ -81,7 +91,9 @@ examples:
 * `i` - Case *Insensitive* search. the case (upper/lower) should be ignored while attempting to match
 * `m` - Multi line search. Will match the start and end of a line, and multiple lines, rather than just a string.
 
-### Grouping and Capturing
+<br>
+
+## Grouping and Capturing
 
 Grouping or capturing groups allows one to combine selected characters or strings into a single unit. In other words, grouping or capturing groups unifies a pattern or string so that it is matched in a group.
 
@@ -92,8 +104,9 @@ For example:
 * `x(?:xyz)` - Disable the capture group with the value of 'xyz'.
 * `x(?<bar>xyz)` - Add name 'bar' to capture group with the value of 'xyz'.
 
+<br>
 
-### Bracket Expressions
+## Bracket Expressions
 
 Bracket Expressions are any characters that are inside of a bracket `[]` which represent a range of characters that are meant to match. In other words, Bracket Expressions are used to match any single characters within the brackets.
 
@@ -104,7 +117,9 @@ For example:
 * `[0-9]%` - A string that has a character from 0-9 before a %.
 * `[^a-zA-Z]` - A string that *does not* contain a letter from z-a or from A-Z.
 
-### Greedy and Lazy Match
+<br>
+
+## Greedy and Lazy Match
 
 Quantifiers can be made lazy by adding the `?` symbol at the end. This means that it will match as few occurences as possible.
 
@@ -113,14 +128,16 @@ However, when only dealing with greedy quantifiers, a `+` and/or `{}` can be use
 * Greedy match = Quantifiers will attempt to match as *many* occurences of input possible.
 * Lazy match = Quantifiers will attempt to match as *few* occurences of input possible.
 
-### Boundaries
+<br>
+
+## Boundaries
 
 Boundaries can be used to capture specific instances or changes withing a designated string. They make assertions about what can be matched to the left and right of the current position.
 Word boundaries are useful when you want to match a sequence of letters, or numbers, on their own.
 
+<br>
 
-
-### Back-references
+## Back-references
 
 Back-references are references to previously created/captured groups. Think of it as a way to reuse previous tags or lines of text. In addition, back-references also ensure two pieces of a string match.
 
@@ -130,7 +147,9 @@ For example:
 * `([xyz])\1` - Using the `\1`, the regex matches the same text that was matched in the first capture group.
 * `([uwx])([yz])\2\1` - We can use `\1`, `\2`, `\3` etc... to identify the same text that was captured in the 1st, 2nd, 3rd, ... capturing.
 
-### Look-ahead and Look-behind
+<br>
+
+## Look-ahead and Look-behind
 
 Look behind means to look at the word at the end of a specified sentence. Look ahead is the opposite, meaning to look at the word at the beginning of a specified sentence. 
 
@@ -140,8 +159,10 @@ For example:
 * `(?<=The Cat is Fuzzy.)*` - Look behind: The results will highlight the word `Fuzzy` as it is the last word in the sentence.
 * `(?=The Cat is Fuzzy.)*` - Look ahead: The results will highlight the word `The` as it is the first word in the sentence.
 
+<br>
+
 ## Author
 
-- Kevin Rosengren is a junior developer in his bootcamp class hosted by the University of Texas at Austin.
+ Kevin Rosengren is a junior developer in his bootcamp class hosted by the University of Texas at Austin.
 
-Github profile: https://github.com/krosengr4
+ Github profile: https://github.com/krosengr4
