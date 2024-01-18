@@ -85,6 +85,14 @@ examples:
 
 Grouping or capturing groups allows one to combine selected characters or strings into a single unit. In other words, grouping or capturing groups unifies a pattern or string so that it is matched in a group.
 
+To use capture groups, we can use `()` parentheses to create a capture group. We can also use `(?<>)` to put a name into the capture group. Also we can use `(?:)` to disable the capture group.
+
+For example: 
+* `x(xyz)` - Create a capture group with the value of 'xyz'.
+* `x(?:xyz)` - Disable the capture group with the value of 'xyz'.
+* `x(?<bar>xyz)` - Add name 'bar' to capture group with the value of 'xyz'.
+
+
 ### Bracket Expressions
 
 Bracket Expressions are any characters that are inside of a bracket `[]` which represent a range of characters that are meant to match. In other words, Bracket Expressions are used to match any single characters within the brackets.
