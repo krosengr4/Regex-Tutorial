@@ -117,6 +117,14 @@ For example:
 
 ### Look-ahead and Look-behind
 
+Look behind means to look at the word at the end of a specified sentence. Look ahead is the opposite, meaning to look at the word at the beginning of a specified sentence. 
+
+To use look behind, you would use the syntax `(?<=Y)` where Y is your specified sentence. For look ahead you would use the syntax `x(?=Y)` where Y is the specified sentence.
+
+For example: 
+* `(?<=The Cat is Fuzzy.)*` - Look behind: The results will highlight the word `Fuzzy` as it is the last word in the sentence.
+* `(?=The Cat is Fuzzy.)*` - Look ahead: The results will highlight the word `The` as it is the first word in the sentence.
+
 ## Author
 
 - Kevin Rosengren is a junior developer in his bootcamp class hosted by the University of Texas at Austin.
