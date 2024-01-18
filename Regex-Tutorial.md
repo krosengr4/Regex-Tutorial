@@ -128,6 +128,11 @@ However, when only dealing with greedy quantifiers, a `+` and/or `{}` can be use
 * Greedy match = Quantifiers will attempt to match as *many* occurences of input possible.
 * Lazy match = Quantifiers will attempt to match as *few* occurences of input possible.
 
+For example: 
+* `<.+?>` - matches any character that is included one or many time inside the '<' and '>'. Expands as needed.
+* `<[^<>]+>` - matches any character expects `<` or `>` one or more times included inside `<` and `>`. 
+
+
 <br>
 
 ## Boundaries
