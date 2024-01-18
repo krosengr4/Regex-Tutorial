@@ -87,6 +87,8 @@ Grouping or capturing groups allows one to combine selected characters or string
 
 ### Bracket Expressions
 
+Bracket Expressions are any characters that are inside of a bracket `[]` which represent a range of characters that are meant to match. In other words, Bracket Expressions are used to match any single characters within the brackets.
+
 ### Greedy and Lazy Match
 
 ### Boundaries
