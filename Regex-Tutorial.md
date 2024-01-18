@@ -105,6 +105,8 @@ Word boundaries are useful when you want to match a sequence of letters, or numb
 
 ### Back-references
 
+Back-references are references to previously created/captured groups. Think of it as a way to reuse previous tags or lines of text. In addition, back-references also ensure two pieces of a string match.
+
 ### Look-ahead and Look-behind
 
 ## Author
