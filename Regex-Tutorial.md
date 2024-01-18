@@ -30,21 +30,23 @@ This is a regular expression that is used to match an email address.
 ## Regex Components
 
 ### Anchors
-Anchors are characters within the regular expressions that allow the user to match strings begin or end with certain characters.
+Anchors are characters within the regular expressions that allow the user to match strings begin or end with certain characters. The characters `^` and `$` are considered to be anchors.
 
 - `^` matches any string that start with the anterior word.
 - `$` matches a string that ends with the word infront of the character.
+
+In other words, The `^` signifies the start of the string and the `$` signifies the end of the string.
+
 For example:
 - Hello --- Would match any string with the exact text 'Hello' in it. 
 - ^Hello --- Would match any string starting with the word 'Hello'.
-- world$ --- Would match any string ending in 'goodbye'.
-- ^Hello world$ --- Matches exactly 'Hello world'
-
+- goodbye$ --- Would match any string ending in 'goodbye'.
+- ^Hello goodbye$ --- Matches exactly 'Hello goodbye'
 
 
 ### Quantifiers
 
-Quantifiers are characters within the regular expression that specify how many instances a charcter, group, or character class must be represented in the input to be matched.
+Quantifiers set the limits of the string that the regex matches. Special characters within the regular expression set the minimum and maximum number of characters of the string that the regex matches.
 
 - `*` matches a string that has the anterior followed by zero or more of the last character. 
 - `+` matches a string that has the anterior followed by one or more of the last character. 
