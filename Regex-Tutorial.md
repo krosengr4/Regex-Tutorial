@@ -54,6 +54,14 @@ Quantifiers set the limits of the string that the regex matches. Special charact
 
 ### OR Operator
 
+An OR operator, often marked with a `(|)` or `[]`, matches on a choice of regular expressions. If you put the character(s) representing the OR operator between any two characters in the regular expression, the regex will match the union of the strings that those two characters match. 
+
+An expression written `[abc]` could be written as `(a|b|c)`, which means `(a OR b OR c)`.
+
+Examples: 
+* `(|)` - mathces a string that has any anterior characters followed by the characters on the left or right of the vertical bar.
+* `[]` - matches a string that has any anterior characters without any characters within the brackets.
+
 ### Character Classes
 
 ### Flags
