@@ -83,6 +83,8 @@ examples:
 
 ### Grouping and Capturing
 
+Grouping or capturing groups allows one to combine selected characters or strings into a single unit. In other words, grouping or capturing groups unifies a pattern or string so that it is matched in a group.
+
 ### Bracket Expressions
 
 ### Greedy and Lazy Match
