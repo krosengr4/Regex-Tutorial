@@ -91,6 +91,13 @@ Bracket Expressions are any characters that are inside of a bracket `[]` which r
 
 ### Greedy and Lazy Match
 
+Quantifiers can be made lazy by adding the `?` symbol at the end. This means that it will match as few occurences as possible.
+
+However, when only dealing with greedy quantifiers, a `+` and/or `{}` can be used which allows the matches to expand as long as its needed.
+
+* Greedy match = Quantifiers will attempt to match as *many* occurences of input possible.
+* Lazy match = Quantifiers will attempt to match as *few* occurences of input possible.
+
 ### Boundaries
 
 ### Back-references
