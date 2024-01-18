@@ -103,9 +103,17 @@ However, when only dealing with greedy quantifiers, a `+` and/or `{}` can be use
 Boundaries can be used to capture specific instances or changes withing a designated string. They make assertions about what can be matched to the left and right of the current position.
 Word boundaries are useful when you want to match a sequence of letters, or numbers, on their own.
 
+
+
 ### Back-references
 
 Back-references are references to previously created/captured groups. Think of it as a way to reuse previous tags or lines of text. In addition, back-references also ensure two pieces of a string match.
+
+Back-references are specified by using a `\` followed by a digit. 
+
+For example:
+* `([xyz])\1` - Using the `\1`, the regex matches the same text that was matched in the first capture group.
+* `([uwx])([yz])\2\1` - We can use `\1`, `\2`, `\3` etc... to identify the same text that was captured in the 1st, 2nd, 3rd, ... capturing.
 
 ### Look-ahead and Look-behind
 
