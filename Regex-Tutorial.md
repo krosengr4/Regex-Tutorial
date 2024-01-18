@@ -97,6 +97,13 @@ For example:
 
 Bracket Expressions are any characters that are inside of a bracket `[]` which represent a range of characters that are meant to match. In other words, Bracket Expressions are used to match any single characters within the brackets.
 
+To use Bracket Expressions we use `[]` to match any character within the brackets. We can also user `[]%` to match the string within the brackets. In addition we can use `[^]` to match any string that *does not* contain a letter from the brackets, known as negation of expression.
+
+For example: 
+* `[xyz]` - matches a string that either has 'x' OR 'x y' OR 'x z'. 
+* `[0-9]%` - A string that has a character from 0-9 before a %.
+* `[^a-zA-Z]` - A string that *does not* contain a letter from z-a or from A-Z.
+
 ### Greedy and Lazy Match
 
 Quantifiers can be made lazy by adding the `?` symbol at the end. This means that it will match as few occurences as possible.
