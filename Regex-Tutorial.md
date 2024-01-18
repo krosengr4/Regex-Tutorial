@@ -140,6 +140,11 @@ For example:
 Boundaries can be used to capture specific instances or changes withing a designated string. They make assertions about what can be matched to the left and right of the current position.
 Word boundaries are useful when you want to match a sequence of letters, or numbers, on their own.
 
+For example:
+*  `\bxyz\b` - matches a 'whole word only search' for the string 'xyz'.
+* `\Bxyz\B` - matches only if the pattern is fully surrounded by word characters 'txyzt'.
+
+
 <br>
 
 ## Back-references
